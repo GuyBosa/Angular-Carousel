@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<header>
+  <div class="header-text">What are you <strong>here to do?</strong></div>
+</header>
+<section>
+  <ngx-slick-carousel class="carousel" 
+  #slickModal="slick-carousel" 
+  [config]="slideConfig" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+  <mat-card class="example-card" ngxSlickItem *ngFor="let slide of slides" class="slide mat-card-wrap">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Service</mat-card-title>
+      <mat-card-subtitle>Task</mat-card-subtitle>
+    </mat-card-header>
+    <img class="photo" mat-card-image src="{{ slide.img }}" alt="Photo">
+    <mat-card-content>
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium aperiam fugit quam obcaecati odio sit nesciunt ratione reiciendis eveniet, accusantium temporibus eos explicabo asperiores dolorum unde illum vitae nemo.
+      </p> -->
+      <h1>Loreum ipsum</h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>START HERE ></button>
+      <!-- <button mat-button>SHARE</button> -->
+    </mat-card-actions>
+  </mat-card>
+  </ngx-slick-carousel>
+</section>
+
+<app-footer></app-footer>
+

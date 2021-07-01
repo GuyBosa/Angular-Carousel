@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300;1,400&display=swap");
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '../node_modules/primeng/resources/themes/arya-blue/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+@import '~primeicons/primeicons.css';
+html,
+body {
+  height: 100vh;
+  zoom: 90%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #F5F5F5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+h1{
+  text-align: center;
+}
+section{
+    padding: 10px;
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+.mat-card {
+  width: 350px;
+  margin: 15px;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  p {
+    font-size: 16px;
+  }
+}
+}
+.fa {
+  font-size: 40px;
+  color: #F5F5F5;
+  margin: 0 0 0 10px;
+}
+@media(max-width:575px){
+  section{
+    .mat-card{
+      margin: 10px;
+      width: 280px;
+    }
+  }
+}

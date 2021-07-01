@@ -1,0 +1,74 @@
+.container{
+    max-width: 100% !important; width: 100%; padding: 0 !important; margin: 0 !important;
+}
+
+.nav-style{
+    box-shadow: 1px 1px 2px 3px #ccc; padding: 0 150px 0 150px; background-color: #fff;
+}
+
+.nav-position{
+    justify-content: space-evenly;
+}
+
+.list{
+    padding: 0 170px 0 0;
+}
+
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #fff;
+    background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #495057;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  /*removes link color*/
+  a {color: inherit}
+
+  .logo{
+    width: 7%; top: 10px; position: relative;
+  }
+  
