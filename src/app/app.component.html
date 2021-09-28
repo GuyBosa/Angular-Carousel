@@ -19,18 +19,48 @@
     </mat-card-header>
     <img class="photo" mat-card-image src="{{ slide.img }}" alt="Photo">
     <mat-card-content>
-      <!-- <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium aperiam fugit quam obcaecati odio sit nesciunt ratione reiciendis eveniet, accusantium temporibus eos explicabo asperiores dolorum unde illum vitae nemo.
-      </p> -->
       <h1>Loreum ipsum</h1>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>START HERE ></button>
-      <!-- <button mat-button>SHARE</button> -->
     </mat-card-actions>
   </mat-card>
   </ngx-slick-carousel>
+
+  <!-- second -->
+  <div>
+    <ngb-carousel #ngcarousel>
+      <ng-template ngbSlide id="one">
+        <div class="picsum-img-wrapper">
+          <img src="assets/img-01.jpg" alt="Slide 1">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide id="two">
+        <div class="picsum-img-wrapper">
+          <img src="assets/img-02.jpg" alt="Slide 2">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide id="three">
+        <div class="picsum-img-wrapper">
+          <img src="assets/img-03.jpg" alt="Slide 3">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide id="four">
+        <div class="picsum-img-wrapper">
+          <img src="assets/img-04.jpg" alt="Slide 4">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    
+    <div class="text-center">
+      <!-- <button (click)="navigateToSlide('four')">Go to Slide Four</button>
+      <button (click)="getToPrev()">Prev</button>
+      <button (click)="goToNext()">Next</button>
+      <button (click)="stopCarousel()">Pause</button> -->
+    </div>
+  </div>
 </section>
+
 
 <app-footer></app-footer>
 

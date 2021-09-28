@@ -10,6 +10,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import * as jquery from 'jquery';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
